@@ -1,5 +1,3 @@
-import sys
-
 # We will use a class called my trie node
 class MyTrieNode:
     # Initialize some fields 
@@ -83,6 +81,10 @@ class MyTrieNode:
                 # catch all paths for s_j
                 s_j = self.stringCompletion(root.next[ch], (auto_word + ch), s_j)
         return s_j
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Tests for program
         
 t= MyTrieNode(True) # Create a root Trie node
 lst1=['test','testament','testing','ping','pin','pink','pine','pint','testing','pinetree']
